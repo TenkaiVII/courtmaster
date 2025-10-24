@@ -28,3 +28,12 @@ A PHP & MySQL-based web application for managing football court bookings.
 ## Default Accounts
 - **Admin Login:** admin@example.com / admin123  
 - **Sample User:** mohammed@gmail.com / reaper
+
+# Database Schema
+- users – stores user details (user_id, name, email, password, role)
+- admins – stores admin credentials
+- availability – stores admin-defined available court times
+- courts – stores court details (id, name, location, open/close times)
+- bookings – stores user bookings with start/end times, prices, and statuses
+- maintenance – stores blocked maintenance periods for each court
+- notifications – Stores system notifications sent to users (e.g., booking confirmations, cancellations, reminders) // Half of it currently does not work.
